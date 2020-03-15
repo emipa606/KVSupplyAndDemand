@@ -28,8 +28,8 @@ namespace SupplyAndDemand
     {
         static void Postfix(ref int __result, StockGenerator __instance)
         {
-            float adjustment = Settings.ScaleAdjustment * 0.01f;
-            float totalWealth = Find.CurrentMap.wealthWatcher.WealthTotal;
+            float adjustment = Settings.ScaleAdjustment * 0.0008f;
+            float totalWealth = Find.World.PlayerWealthForStoryteller;
             float storyTellerPriceLossFactor = 1f - Find.Storyteller.difficulty.tradePriceFactorLoss;
 
             if (Settings.ScaleVisitors || __instance.trader.orbital || __instance.trader.defName.Contains("Base_"))
