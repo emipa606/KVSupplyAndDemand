@@ -15,11 +15,6 @@ namespace SupplyAndDemand
         {
             var harmony = new Harmony("com.supplyanddemand.rimworld.mod");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-
-            Log.Message(
-                "SupplyAndDemand Harmony Patches:" + Environment.NewLine +
-                "  Postfix:" + Environment.NewLine +
-                "    StockGenerator.RandomCountOf");
         }
     }
 
