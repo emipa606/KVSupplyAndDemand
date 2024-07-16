@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>60356a4a-6eb2-4198-a9f4-1da8c3db25a8</ID>
   <ModName>[KV] Supply and Demand (Continued)</ModName>
-  <Version>1.5.1</Version>
+  <Version>1.5.2</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,8 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-
 

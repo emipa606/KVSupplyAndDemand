@@ -1,4 +1,4 @@
-# [[KV] Supply and Demand (Continued)]()
+# [[KV] Supply and Demand (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3290701666)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -31,10 +31,6 @@ This equation is the scaling formula used in this mod. Lambda represents total c
 
 Original mod done by Cookie Wookie. Cookie, if you want me to remove this mod i will.
 
-
-Direct Download:
-https://github.com/KiameV/rimworld-supplyanddemand/releases/download/1.3/SupplyAndDemand.zip
-
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
@@ -48,3 +44,5 @@ https://github.com/KiameV/rimworld-supplyanddemand/releases/download/1.3/SupplyA
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
 
+
+[![Image](https://img.shields.io/github/v/release/emipa606/KVSupplyAndDemand?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3290701666)
