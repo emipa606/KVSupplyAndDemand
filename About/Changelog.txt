@@ -1,5 +1,8 @@
 # Changelog for KVSupplyAndDemand
 
+1.5.3 - Missed the 1.4 tag in the about-file
+
+
 1.5.2 - Fixed the preview-image
 
 
