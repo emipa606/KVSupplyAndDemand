@@ -6,24 +6,22 @@ namespace SupplyAndDemand;
 
 public class Settings : ModSettings
 {
-    private const float MIN_SCALE = 0.1f;
+    private const float MinScale = 0.1f;
 
-    private const float SCALE_ADJUSTMENT_DEFAULT = 100f;
+    private const float ScaleAdjustmentDefault = 100f;
 
     public static bool ScaleVisitors;
 
-    public static float ScaleAdjustment = SCALE_ADJUSTMENT_DEFAULT;
-
-    public static readonly bool IncludeLogging = false;
+    public static float ScaleAdjustment = ScaleAdjustmentDefault;
 
     public override void ExposeData()
     {
         base.ExposeData();
         Scribe_Values.Look(ref ScaleVisitors, "ScaleVisitors");
-        Scribe_Values.Look(ref ScaleAdjustment, "ScaleAdjustmentV2", SCALE_ADJUSTMENT_DEFAULT);
+        Scribe_Values.Look(ref ScaleAdjustment, "ScaleAdjustmentV2", ScaleAdjustmentDefault);
         if (Scribe.mode == LoadSaveMode.LoadingVars)
         {
-            ScaleAdjustment = Math.Max(ScaleAdjustment, MIN_SCALE);
+            ScaleAdjustment = Math.Max(ScaleAdjustment, MinScale);
         }
     }
 
@@ -41,14 +39,14 @@ public class Settings : ModSettings
         y += 40f;
         if (text2 != text && float.TryParse(text2, out var result))
         {
-            result = Math.Max(result, MIN_SCALE);
+            result = Math.Max(result, MinScale);
 
             ScaleAdjustment = result;
         }
 
-        if (Widgets.ButtonText(new Rect(num, y, SCALE_ADJUSTMENT_DEFAULT, 30f), "Default".Translate()))
+        if (Widgets.ButtonText(new Rect(num, y, ScaleAdjustmentDefault, 30f), "Default".Translate()))
         {
-            ScaleAdjustment = SCALE_ADJUSTMENT_DEFAULT;
+            ScaleAdjustment = ScaleAdjustmentDefault;
         }
 
         if (SettingsController.CurrentVersion == null)

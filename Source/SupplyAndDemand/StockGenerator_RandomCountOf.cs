@@ -6,7 +6,7 @@ using Verse;
 namespace SupplyAndDemand;
 
 [HarmonyPatch(typeof(StockGenerator), "RandomCountOf")]
-internal static class Patch_FloatMenuMakerMap_ChoicesAtFor
+internal static class StockGenerator_RandomCountOf
 {
     private static void Postfix(ref int __result, StockGenerator __instance)
     {
@@ -19,18 +19,6 @@ internal static class Patch_FloatMenuMakerMap_ChoicesAtFor
         }
 
         var num3 = Math.Log(Math.E + (playerWealthForStoryteller * num2));
-        if (Settings.IncludeLogging)
-        {
-            Log.Message($"    __result pre: {__result}");
-        }
-
         __result = (int)(num * num3 * __result);
-        if (!Settings.IncludeLogging)
-        {
-            return;
-        }
-
-        Log.Message($"    __result post: {__result}");
-        Log.Message("");
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Reflection;
 using HarmonyLib;
 using Verse;
@@ -13,7 +12,5 @@ internal class Main
     static Main()
     {
         new Harmony("com.supplyanddemand.rimworld.mod").PatchAll(Assembly.GetExecutingAssembly());
-        Log.Message(
-            $"SupplyAndDemand Harmony Patches:{Environment.NewLine}  Postfix:{Environment.NewLine}    StockGenerator.RandomCountOf");
     }
 }

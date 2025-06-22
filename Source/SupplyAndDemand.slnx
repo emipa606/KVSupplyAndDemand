@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="SupplyAndDemand/SupplyAndDemand.csproj" />
+</Solution>
